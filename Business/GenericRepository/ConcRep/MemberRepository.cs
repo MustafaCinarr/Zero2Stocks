@@ -1,13 +1,13 @@
 using Business.GenericRepository.BaseRep;
-using Business.GenericRepository.IntRep;
 using DataAccess;
 using Domain.Model;
+using Business.GenericRepository.IntRep;
 
 namespace Business.GenericRepository.ConcRep;
 
-public class MemberRepository : BaseRepository<Member>, IRepository<Member>
+public class MemberRepository : BaseRepository<Member>, IMemberRepository
 {
-    public MemberRepository(BusinessPartnerContext db) : base(db)
+    public MemberRepository(Zero2StocksContext db) : base(db)
     {
     }
 }

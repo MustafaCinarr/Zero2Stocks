@@ -1,12 +1,8 @@
-namespace Business.DTOs.Member;
+namespace Business.DTOs.Auth;
 
-public class MemberUpdateDto
+public class MemberResponseDto
 {
     public int Id { get; set; }
-
     public string UserName { get; set; } = string.Empty;
-
     public string Email { get; set; } = string.Empty;
-
-    public bool IsActive { get; set; }
 }

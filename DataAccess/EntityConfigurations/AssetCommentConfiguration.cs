@@ -8,6 +8,10 @@ public class AssetCommentConfiguration : IEntityTypeConfiguration<AssetComment>
 {
     public void Configure(EntityTypeBuilder<AssetComment> builder)
     {
+        builder.Property(ac => ac.Content)
+            .IsRequired()
+            .HasMaxLength(1000);
+
         builder.HasOne(ac => ac.Asset)
             .WithMany(a => a.Comments)
             .HasForeignKey(ac => ac.AssetId);

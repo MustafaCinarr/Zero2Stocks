@@ -5,9 +5,10 @@ using Domain.Model;
 
 namespace Business.GenericRepository.ConcRep;
 
-public class AssetRepository : BaseRepository<Asset>, IRepository<Asset>
+public class AssetRepository : BaseRepository<Asset>, IAssetRepository
 {
-    public AssetRepository(BusinessPartnerContext db) : base(db)
+    public AssetRepository(Zero2StocksContext db) : base(db)
     {
+        
     }
 }

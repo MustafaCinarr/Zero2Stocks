@@ -1,13 +1,14 @@
 using Business.GenericRepository.BaseRep;
-using Business.GenericRepository.IntRep;
 using DataAccess;
 using Domain.Model;
+using Business.GenericRepository.IntRep;
 
 namespace Business.GenericRepository.ConcRep;
 
-public class PortfolioRepository : BaseRepository<Portfolio>, IRepository<Portfolio>
+public class PortfolioRepository : BaseRepository<Portfolio>, IPortfolioRepository
 {
-    public PortfolioRepository(BusinessPartnerContext db) : base(db)
+    public PortfolioRepository(Zero2StocksContext db) : base(db)
     {
+        
     }
 }

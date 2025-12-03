@@ -7,7 +7,7 @@ namespace Business.GenericRepository.ConcRep;
 
 public class AssetCommentRepository : BaseRepository<AssetComment>, IRepository<AssetComment>
 {
-    public AssetCommentRepository(BusinessPartnerContext db) : base(db)
+    public AssetCommentRepository(Zero2StocksContext db) : base(db)
     {
     }
 }

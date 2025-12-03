@@ -8,6 +8,12 @@ public class PortfolioItemConfiguration : IEntityTypeConfiguration<PortfolioItem
 {
     public void Configure(EntityTypeBuilder<PortfolioItem> builder)
     {
+        builder.Property(pi => pi.Quantity)
+            .HasColumnType("decimal(18,2)");
+
+        builder.Property(pi => pi.AveragePrice)
+            .HasColumnType("decimal(18,2)");
+
         builder.HasOne(pi => pi.Portfolio)
             .WithMany(p => p.Items)
             .HasForeignKey(pi => pi.PortfolioId);

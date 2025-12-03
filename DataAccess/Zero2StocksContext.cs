@@ -3,10 +3,11 @@ using Microsoft.EntityFrameworkCore;
 
 namespace DataAccess;
 
-public class BusinessPartnerContext : DbContext
+public class Zero2StocksContext : DbContext
 {
-    public BusinessPartnerContext(DbContextOptions<BusinessPartnerContext> options) : base(options)
+    public Zero2StocksContext(DbContextOptions<Zero2StocksContext> options) : base(options)
     {
+        
     }
 
     public DbSet<Asset> Assets { get; set; } = null!;
@@ -21,7 +22,7 @@ public class BusinessPartnerContext : DbContext
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
-        modelBuilder.ApplyConfigurationsFromAssembly(typeof(BusinessPartnerContext).Assembly);
+        modelBuilder.ApplyConfigurationsFromAssembly(typeof(Zero2StocksContext).Assembly);
         base.OnModelCreating(modelBuilder);
     }
 }

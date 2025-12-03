@@ -8,6 +8,10 @@ public class PortfolioConfiguration : IEntityTypeConfiguration<Portfolio>
 {
     public void Configure(EntityTypeBuilder<Portfolio> builder)
     {
+        builder.Property(p => p.Name)
+            .IsRequired()
+            .HasMaxLength(50);
+
         builder.HasOne(p => p.Member)
             .WithMany(m => m.Portfolios)
             .HasForeignKey(p => p.MemberId);

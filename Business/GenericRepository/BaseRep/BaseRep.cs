@@ -10,10 +10,10 @@ namespace Business.GenericRepository.BaseRep;
 
 public abstract class BaseRepository<T> : IRepository<T> where T : BaseEntity
 {
-    protected readonly BusinessPartnerContext _db;
+    protected readonly Zero2StocksContext _db;
     protected readonly DbSet<T> _table;
 
-    protected BaseRepository(BusinessPartnerContext db)
+    protected BaseRepository(Zero2StocksContext db)
     {
         _db = db;
         _table = _db.Set<T>();
