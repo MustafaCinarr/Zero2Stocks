@@ -16,28 +16,29 @@ Build a real stock-tracking workflow
 
 This project demonstrates real-world backend development, following SOLID and Domain-Driven Design principles.
 
-Tech Stack
+Tech Stack:
 
-.NET 8
+-.NET 8
 
-ASP.NET Web API
+-ASP.NET Web API
 
-Entity Framework Core
+-Entity Framework Core
 
-SQL Server / PostgreSQL
+-SQL Server / PostgreSQL
 
-AutoMapper
+-AutoMapper
 
-Repository Pattern & Dependency Injection
+-Repository Pattern & Dependency Injection
 
-Future Improvements
 
-Frontend integration (Vue.js)
+Future Improvements:
 
-Real-time stock data provider integration
+-Frontend integration (Vue.js)
 
-Profit/Loss automatic calculation
+-Real-time stock data provider integration
 
-Watchlist module
+-Profit/Loss automatic calculation
 
-Portfolio performance charts
+-Watchlist module
+
+-Portfolio performance charts
